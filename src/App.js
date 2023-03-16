@@ -1,8 +1,7 @@
-import "./App.css";
-
+import "./Components/css/App.css";
 function App() {
   return (
-    <div className="App">
+    <div className="main">
       <h2>Note Taking app built with React JS</h2>
     </div>
   );
