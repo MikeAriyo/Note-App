@@ -15,6 +15,13 @@ function Notes() {
     // using JSON stringify to convert to a string so that it can be sorted
   }, [notes]);
 
+  // retrieving the saved notes and adding them to the local storage
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("Notes"));
+    if (data) {
+      setNotes(data);
+    }
+  }, []);
   const textHandler = (e) => {
     setInputText(e.target.value);
   };
