@@ -5,7 +5,11 @@ import Note from "./Note";
 
 function Notes() {
   const [notes, setNotes] = useState([]);
-  const [inoutText, setInputText] = useState("");
+  const [inputText, setInputText] = useState("");
+
+  const textHandler = (e) => {
+    setInputText(e.target.value);
+  };
   return (
     <div className="notes">
       <Note />

@@ -22,21 +22,21 @@
   white-space: pre-wrap;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #000000;
   resize: none;
   font-size: 18px;
 }
 
 .note textarea::placeholder {
-  color: #fff;
+  color: #000000;
 }
 
 .note__save {
   background: transparent;
   transition: 0.1s ease-in-out;
-  border: 1.5px solid #fff;
+  border: 1.5px solid #000000;
   border-radius: 10px;
-  color: #fff;
+  color: #000000;
   padding: 4px 10px;
   font-size: 13px;
   cursor: pointer;
