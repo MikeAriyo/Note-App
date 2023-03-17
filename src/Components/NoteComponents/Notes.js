@@ -36,8 +36,14 @@ function Notes() {
   };
   return (
     <div className="notes">
-      <Note />
-      <Note />
+      {notes.map((note) => (
+        <Note
+          key={note.id}
+          id={note.id}
+          text={note.text}
+          deleteNote={deleteNote}
+        />
+      ))}
       <CreateNote
         textHandler={textHandler}
         saveHandler={saveHandler}
