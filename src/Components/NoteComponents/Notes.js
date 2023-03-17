@@ -25,6 +25,15 @@ function Notes() {
     // clear the text area
     setInputText("");
   };
+
+  // delete note function
+  const deleteNote = (id) => {
+    const filteredNotes = notes.filter((note) => note.id !== id);
+    setNotes(filteredNotes);
+
+    // how this function works
+    // The javascript filter iterates over the existing values in an array and returns the values that pass
+  };
   return (
     <div className="notes">
       <Note />
