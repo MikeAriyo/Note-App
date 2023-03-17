@@ -8,6 +8,13 @@ function Notes() {
   const [notes, setNotes] = useState([]);
   const [inputText, setInputText] = useState("");
 
+  // saving data to local storage
+  useEffect(() => {
+    localStorage.setItem("Notes", JSON.stringify(notes));
+
+    // using JSON stringify to convert to a string so that it can be sorted
+  }, [notes]);
+
   const textHandler = (e) => {
     setInputText(e.target.value);
   };
