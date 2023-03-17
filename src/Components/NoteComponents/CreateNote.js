@@ -1,4 +1,5 @@
 import { React } from "react";
+import LinearProgress from "@mui/material/LinearProgress";
 
 function CreateNote({ textHandler, saveHandler, inputText }) {
   const charLimit = 100;
@@ -20,6 +21,12 @@ function CreateNote({ textHandler, saveHandler, inputText }) {
           Save
         </button>
       </div>
+
+      <LinearProgress
+        className="char__progress"
+        variant="determinate"
+        value={charLeft}
+      />
     </div>
   );
 }
